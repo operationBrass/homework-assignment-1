@@ -1,5 +1,14 @@
 /*Brendan Lewis 2021*/
 
+/*removed references to floats and other outdated technique in favour of Flex elements.
+Extensive cleanup of CSS code to clear up the redundent use of fonts, img sizes, margins etc. 
+Semantic elements used in HTML layout. 
+
+*/
+
+
+
+
 /****************/
 /*global styles*/
 /****************/
@@ -41,10 +50,10 @@ img
 }
 
 .hero {
-    height: 35vh;
+    height: 45vh;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -67,7 +76,7 @@ img
     margin-left: 10px;
 }
 
-header h1 .seo {
+.heading h1 .seo {
     color: #d9dcd6;
 }
 
@@ -98,13 +107,14 @@ header h1 .seo {
 
 .main-section
 {
-    flex:1 1 75%;
+    flex:1 1 80%;
 
 }
 
 .sidebar
 {
-    flex: 1 1 25%;
+    flex: 1 1 20%;
+    justify-content: space-evenly;
     background-color: #2589bd;
 }
 
@@ -115,22 +125,25 @@ header h1 .seo {
 {
     display:flex;
     background-color: #0072bb;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
     padding:50px;
 }
 .rt-content
 {
     text-align: center;
 }
+
 .rt-content p
 {
     text-align: left;
+    font-size: 15px;
+    margin: 15px;
 }
 
 .rt-content img
 {
-    max-width: 150px;
+    max-width: 180px;
     height: auto;
 }
 
