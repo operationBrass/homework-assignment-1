@@ -50,11 +50,11 @@ img
 }
 
 .hero {
-    height: 45vh;
+    height: 43vh;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: contain;
-    background-position: center;
+    background-size:cover;
+    background-position:center;
 }
 
 /****************/
