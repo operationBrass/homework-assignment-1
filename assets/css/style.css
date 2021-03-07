@@ -1,17 +1,8 @@
+/*Brendan Lewis 2021*/
 
-/*when specifiying a size of a box or searching for height of a box, 
-returns the padding and border.*/
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-/*By adding the padding, we can make sure that we will have a 16px offset from 
-the left and right sides, even if the viewport size is less 
-than the maximum width. The padding acts as a protective strategy that 
-avoids making the wrapper sticking to the viewport edges when space is not enough.
-*/
+/****************/
+/*global styles*/
+/****************/
 
 .page-wrapper
 {
@@ -23,21 +14,14 @@ avoids making the wrapper sticking to the viewport edges when space is not enoug
     background-color: #d9dcd6;
 }
 
-img
-{
-    max-width: 200px;
-    height: auto;
-}
-
-
-
-
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
-p,h1, h2
+/*paragraph and header global*/
+
+p,h1, h2, h3
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
@@ -50,32 +34,23 @@ h2
     font-size: 30px;
 }
 
-.flex-container
+img
 {
-    display:flex;
+    max-width: 300px;
+    height: auto;
 }
 
-.main-section
-{
-    flex:1 1 auto;
-
+.hero {
+    height: 35vh;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.sidebar
-{
-    flex: 1 1 15%;
-    background-color: #2589bd;
-}
-
-.footer
-{
-    background-color:#2a607c;
-    margin-right: 10px;
-
-}
-
-/*header class */
-
+/****************/
+/*header setup and styling */
+/****************/
 .heading
 {
     display:flex;
@@ -100,7 +75,7 @@ header h1 .seo {
 .header-nav
 {
     padding-right: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -109,20 +84,33 @@ header h1 .seo {
 {
     text-decoration:none;
     display: inline-block;
-    padding: 30px;
+    padding: 20px;
 
 }
 
-
-.hero {
-
-   height: 40vh;
-   background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 5px;
+/**********************************************************/
+/* main content and sidebar container setup using flexbox */
+/**********************************************************/
+.flex-container
+{
+    display:flex;
 }
 
+.main-section
+{
+    flex:1 1 75%;
+
+}
+
+.sidebar
+{
+    flex: 1 1 25%;
+    background-color: #2589bd;
+}
+
+/************************************/
+/*main content and sidebar styling */
+/************************************/
 .ctr-article
 {
     display:flex;
@@ -131,24 +119,19 @@ header h1 .seo {
     margin-right: 10px;
     padding:50px;
 }
-
 .rt-content
 {
-    
-    padding: 25px;
-    font-size: 0.8rem;
+    text-align: center;
+}
+.rt-content p
+{
     text-align: left;
 }
 
 .rt-content img
 {
-    max-width: 100px;
+    max-width: 150px;
     height: auto;
-}
-
-.rt-content h2
-{
- font-size: 1.2rem;
 }
 
 
@@ -156,6 +139,17 @@ header h1 .seo {
 {
     padding:10px;
     margin:2px;
+}
+
+
+/******************************/
+/**********footer**************/
+/******************************/
+.footer
+{
+    background-color:#2a607c;
+    margin-right: 10px;
+
 }
 
 
