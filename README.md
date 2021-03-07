@@ -4,4 +4,4 @@ The site uses flex containers to replicate the exisitng website and allow for in
 CSS code is broken into groups and commented on the section that it applies to. 
 HTML code has semantic elements, working links and alt text added to images. 
 
-[Screen-shot-of-final-product] (/assets/images/final_screen/horiseonScreen.jpg)
+![Screen-shot-of-final-product](/assets/images/final_screen/horiseonScreen.jpg)
